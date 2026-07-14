@@ -1,0 +1,14 @@
+
+<serviceTask id="bizumPaymentTask" 
+             name="Procesar Pago Bizum" 
+             flowable:async="true" 
+             flowable:exclusive="true"
+             flowable:delegateExpression="${bizumPaymentDelegate}">
+    
+    <!-- Нестандартная настройка ретраев -->
+    <extensionElements>
+        <flowable:failedJobRetryTimeCycle>R4/PT1M</flowable:failedJobRetryTimeCycle>
+    </extensionElements>
+    
+</serviceTask>
+
