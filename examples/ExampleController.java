@@ -12,7 +12,7 @@ import java.util.Map;
  * @author Alexander Kuziv <makklays@gmail.com>
  * @company TechMatrix18
  * @version 0.0.1
- * @since 22.01.2026
+ * @since 14.07.2026
  */
 @RestController
 public class ExampleController {
